@@ -31,24 +31,13 @@ git clone https://github.com/USERNAME/NAMA-REPO.git
 cd NAMA-REPO
 ```
 
-### 2. Konfigurasi Database
-1. Buat database baru di MySQL/phpMyAdmin, misalnya: `db_akademik`.
-2. Impor struktur tabel dari file `tabel.sql`.
-3. Buka file [application/config/database.php](file:///c:/laragon/www/project-ci3/application/config/database.php) dan sesuaikan kredensial database Anda:
-   ```php
-   'hostname' => 'localhost',
-   'username' => 'root',
-   'password' => '',
-   'database' => 'db_akademik',
-   ```
-
-### 3. Konfigurasi Base URL
+### 2. Konfigurasi Base URL
 Buka [application/config/config.php](file:///c:/laragon/www/project-ci3/application/config/config.php) dan sesuaikan `base_url`:
 ```php
 $config['base_url'] = 'http://localhost/project-ci3/';
 ```
 
-### 4. Menjalankan Aplikasi
+### 3. Menjalankan Aplikasi
 Akses aplikasi melalui browser:
 ```text
 http://localhost/project-ci3/
