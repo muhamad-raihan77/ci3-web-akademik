@@ -1,0 +1,50 @@
+# Environment & Sensitive Files
+.env
+.env.*
+*.env
+*.key
+*.pem
+*.secret
+
+# Logs & Cache
+application/cache/*
+!application/cache/index.html
+application/logs/*
+!application/logs/index.html
+*.log
+
+# Composer & Dependencies
+/vendor/
+composer.lock
+
+# IDE & OS Files
+.vscode/
+.idea/
+/nbproject/
+*.sublime-workspace
+*.sublime-project
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary & Test Files
+scratch/
+test.php
+test.sql
+*.tmp
+*.bak
+/tests/tests/
+/tests/results/
+tests/mocks/database/ci_test.sqlite
+
+# User Guide (CI3 Docs build)
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
+
+# CodeIgniter security
+!application/*/.htaccess
